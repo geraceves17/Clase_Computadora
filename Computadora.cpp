@@ -5,33 +5,13 @@ Computadora::Computadora()
 
 }
 
-Computadora::Computadora(const string &alm, const string &ram, const string &sisOp, const string &nombreEqui)
+Computadora::Computadora(const string &sisOp, const string &nombreEqui, const string &ram, const string &alm)
 {
-    this->alm = alm;
-    this->ram = ram;
     this->sisOp = sisOp;
     this->nombreEqui = nombreEqui;
+    this->ram = ram;
+    this->alm = alm;
 }
-void Computadora::setAlm(const string &e)
-{
-    alm = e;
-}
-
-string Computadora::getAlm()
-{
-    return alm;
-}
-
-void Computadora::setRam(const string &e)
-{
-    ram = e;
-}
-
-string Computadora::getRam()
-{
-    return ram;
-}
-
 void Computadora::setSisOp(const string &e)
 {
     sisOp = e;
@@ -50,4 +30,24 @@ void Computadora::setNombreEqui(const string &e)
 string Computadora::getNombreEqui()
 {
     return nombreEqui;
+}
+
+void Computadora::setRam(const string &e)
+{
+    ram = e;
+}
+
+string Computadora::getRam()
+{
+    return ram;
+}
+
+void Computadora::setAlm(const string &e)
+{
+    alm = e;
+}
+
+string Computadora::getAlm()
+{
+    return alm;
 }
