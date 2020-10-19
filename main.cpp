@@ -13,9 +13,17 @@ int main(){
     c03.setAlm("256 Gb");
 
     Laboratorio lab;
-    lab.agregarFinal(c02);
-    lab.agregarFinal(c03);
+
+    //lab.agregarFinal(c02);
+    //lab.agregarFinal(c03);
+    lab<<c02<<c03;
+
+    //cout<<c02;
+    Computadora c04;
+    cin>>c04;
+    lab<<c04;
 
     lab.mostrar();
 
+    return 0;
 }
